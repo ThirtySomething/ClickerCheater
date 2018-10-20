@@ -1,7 +1,7 @@
-# ClickerCheater
+# ClickerFraud
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/) [![GitHub forks](https://img.shields.io/github/forks/ThirtySomething/ClickerCheater.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/ThirtySomething/ClickerCheater/network/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-**ClickerCheater** is distributed under the terms of the **Unlicense**, version 3.0. The text of the license is included in the file [<code>LICENSE</code>][license] in the project root.
+**ClickerFraud** is distributed under the terms of the **Unlicense**, version 3.0. The text of the license is included in the file [<code>LICENSE</code>][license] in the project root.
 
 ## Motivation
 There are many clicker games. Playing can ruin your mouse, touchpad, or fingers. I've been thinking about how to simulate clicking. Normal software may not work depending on which clicker game you are playing.  But hardware would do it. And that's what happens when programmers get bored.
