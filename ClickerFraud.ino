@@ -1,31 +1,32 @@
 #include <Mouse.h>
 
-#define CPS 20                              // Clicks per second
-#define ONS 1000                            // One second in milli seconds
-#define LIM 1000                            // Clicks for one loop
-#define GAP 2000                            // Delay before loop restarts
-#define ICMI 10                             // Minimum random delay
-#define ICMA 20                             // Maximum random delay
+#define DELAY_MIN 25                                // Minimum random delay
+#define DELAY_MAX 50                                // Maximum random delay
+#define CLICKS_MIN 500                              // Minimum number of clicks per loop
+#define CLICKS_MAX 1000                             // Maximum number of clicks per loop
+#define WAIT_MIN 1000                               // Minimum miliseconds to wait after loop
+#define WAIT_MAX 2000                               // Maximum miliseconds to wait after loop
 
-int defaultWait;                            // Delay after one click
-int countClicks;                            // Click counter
-int randomWait;                             // Random delay after one click
+int countClicks;                                    // Click counter
+int randomWait;                                     // Random delay after one click
+int clicksInLoop;                                   // Number of clicks per loop
+int waitLoop;                                       // Miliseconds to wait after loop
 
 void setup() {
-  Mouse.begin();                            // Initialize mouse
-  randomSeed(analogRead(0));                // Initialize 'random device'
+  Mouse.begin();                                    // Initialize mouse
+  randomSeed(analogRead(0));                        // Initialize 'random device'
  }
 
 void loop() {
-  defaultWait = (int)(ONS/CPS);             // Calculate delay after one click
-  countClicks = 0;                          // Init click counter
-  randomWait = random(ICMI, ICMA);          // Calculate random delay after one click
-  while (countClicks < LIM)                 // While amount of clicks/loop not reached
+  countClicks = 0;                                  // Init click counter
+  clicksInLoop = random(CLICKS_MIN, CLICKS_MAX);    // Random number of clicks per loop
+  while (countClicks < clicksInLoop)                // While amount of clicks/loop not reached
   {
-    Mouse.click(MOUSE_LEFT);                // Do a click on left mouse button
-    delay(defaultWait + randomWait);        // Wait until next action
-    randomWait = random(ICMI, ICMA);        // Recalculate random delay after one click
-    countClicks++;                          // Increase clicks/loop counter
+    Mouse.click(MOUSE_LEFT);                        // Do a click on left mouse button
+    randomWait = random(DELAY_MIN, DELAY_MAX);      // Recalculate random delay after one click
+    delay(randomWait);                              // Wait until next action
+    countClicks++;                                  // Increase clicks/loop counter
   }
-  delay(GAP);                               // Wait before next loop start
+  waitLoop = random(WAIT_MIN, WAIT_MAX);            // Random milliseconds to wait
+  delay(waitLoop);                                  // Wait before next loop start
 }
