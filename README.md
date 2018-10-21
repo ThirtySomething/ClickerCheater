@@ -1,10 +1,10 @@
 # ClickerFraud
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/) [![GitHub forks](https://img.shields.io/github/forks/ThirtySomething/ClickerCheater.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/ThirtySomething/ClickerCheater/network/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-**ClickerFraud** is distributed under the terms of the **Unlicense**, version 3.0. The text of the license is included in the file [<code>LICENSE</code>][license] in the project root.
+**ClickerFraud** is distributed under the terms of the [**Unlicense**][Unlicense]. The text of the license is included in the file [<code>LICENSE</code>][license] in the project root.
 
 ## Motivation
-There are many clicker games. Playing can ruin your mouse, touchpad, or fingers. I've been thinking about how to simulate clicking. Normal software may not work depending on which clicker game you are playing.  But hardware would do it. And that's what happens when programmers get bored.
+There are many clicker games. Playing can ruin your mouse, touchpad, or fingers. I've been thinking about how to simulate clicking. Normal software may not work depending on which clicker game you are playing. But hardware would do it. An additional benefit of hardwar is the independency of operating systems. In theory this should work for Linux, Mac OS and also Windows.
 
 ## Arduino/Teensy
 At first I thought of an [Arduino]. But unfortunately this device does not emulate a [HID Device] out of the box. Through a quick search on the internet I found the [Teensy] board. This emulates a [HID device] and is surprisingly cheaper than an [Arduino]. And the [Arduino IDE][AIDE] supports the [Teensy] board - everything was set.
@@ -54,16 +54,20 @@ There are some tricks:
 ## Improvements
 Of course, a complete fraud device requires much more than this demonstration. For example:
 
-- A display to show the current setup.
-- A switch to start/stop the loop.
-- A possiblity to change the setup.
+- A display to show the current setup, for example the [Adafruit Monochrome 0.96" 128x64 OLED graphic display][Display]
+- A switch to start/stop the loop as described in the [Arduino manual][Switch]
+- A possiblity to change the setup, maybe a [rotary encounter][RotaryEncounter]
 - Anything else I forgot.
 
 But that exceeds my abilities. The [Teensy] comes as a [PCB] - you have to solder any extension to this board.
 
+[Display]: https://www.adafruit.com/product/326
 [AIDE]: Software
 [Arduino]: https://store.arduino.cc/arduino-uno-rev3
 [HID Device]: https://en.wikipedia.org/wiki/Human_interface_device
 [license]: https://github.com/ThirtySomething/YAIP/ClickerCheater/master/LICENSE
 [PCB]: https://en.wikipedia.org/wiki/Printed_circuit_board
+[RotaryEncounter]: https://playground.arduino.cc/Main/RotaryEncoders
+[Switch]: https://www.arduino.cc/en/Tutorial/Button
 [Teensy]: https://www.pjrc.com/store/teensy.html
+[Unlicense]: http://unlicense.org/
