@@ -4,7 +4,7 @@
 **ClickerFraud** is distributed under the terms of the [**Unlicense**][Unlicense]. The text of the license is included in the file [<code>LICENSE</code>][license] in the project root.
 
 ## Motivation
-There are many clicker games. Playing can ruin your mouse, touchpad, or fingers. I've been thinking about how to simulate clicking. Normal software may not work depending on which clicker game you are playing. But hardware would do it. An additional benefit of hardwar is the independency of operating systems. In theory this should work for Linux, Mac OS and also Windows.
+There are many clicker games. Playing can ruin your mouse, touchpad, or fingers. I've been thinking about how to simulate clicking. Normal software may not work depending on which clicker game you are playing. But hardware would do it. An additional benefit of hardware is the independency of operating systems. In theory this should work for Linux, Mac OS and also Windows.
 
 ## Arduino/Teensy
 At first I thought of an [Arduino]. But unfortunately this device does not emulate a [HID Device] out of the box. Through a quick search on the internet I found the [Teensy] board. This emulates a [HID device] and is surprisingly cheaper than an [Arduino]. And the [Arduino IDE][AIDE] supports the [Teensy] board - everything was set.
