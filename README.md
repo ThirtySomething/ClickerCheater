@@ -1,5 +1,5 @@
 # ClickerFraud
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/) [![GitHub forks](https://img.shields.io/github/forks/ThirtySomething/ClickerCheater.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/ThirtySomething/ClickerCheater/network/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/) [![GitHub forks](https://img.shields.io/github/forks/ThirtySomething/ClickerFraud.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/ThirtySomething/ClickerFraud/network/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Language](https://img.shields.io/badge/language-C++-blue.svg)](https://isocpp.org/)
 
 **ClickerFraud** is distributed under the terms of the [**Unlicense**][Unlicense]. The text of the license is included in the file [<code>LICENSE</code>][license] in the project root.
 
@@ -65,7 +65,7 @@ But that exceeds my abilities. The [Teensy] comes as a [PCB] - you have to solde
 [AIDE]: Software
 [Arduino]: https://store.arduino.cc/arduino-uno-rev3
 [HID Device]: https://en.wikipedia.org/wiki/Human_interface_device
-[license]: https://github.com/ThirtySomething/YAIP/ClickerCheater/master/LICENSE
+[license]: https://github.com/ThirtySomething/YAIP/ClickerFraud/master/LICENSE
 [PCB]: https://en.wikipedia.org/wiki/Printed_circuit_board
 [RotaryEncounter]: https://playground.arduino.cc/Main/RotaryEncoders
 [Switch]: https://www.arduino.cc/en/Tutorial/Button
